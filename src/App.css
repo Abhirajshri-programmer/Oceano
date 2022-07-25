@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url("./fonts/Poppins-Regular.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "Poppins";
+    font-weight: 500;
+    src: url("./fonts/Poppins-Medium.ttf") format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "Poppins";
+    font-weight: 600;
+    src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    src: url("./fonts/Poppins-Bold.ttf") format("truetype");
 }
 
-.App-link {
-  color: #61dafb;
+:root {
+    --primary-color: #03D5E3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    font-family: "Poppins";
+}
+
+button {
+    padding: 0 2rem;
+    border-radius: 35px;
+    font-size: 1rem;
+    font-family: "Poppins";
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 8rem;
+}
+
+.navbar__links ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    color: #02073E;
+    font-weight: 400;
+}
+
+.navbar__links ul li {
+    display: inline;
+}
+
+.navbar__links ul li a {
+    padding: 25px;
+}
+
+.navbar__btn {
+    background: none;
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
 }
