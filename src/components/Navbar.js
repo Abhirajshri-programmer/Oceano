@@ -2,7 +2,7 @@ import Logo from '../images/oceano-logo.png';
 
 const Navbar = (props) => {
     return <div className="navbar">
-    <img src={Logo}/>
+    <img src={Logo} alt="oceano logo"/>
     <div className="navbar__links">
       <ul>
         <li><a>Home</a></li>
